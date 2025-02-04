@@ -1,0 +1,236 @@
+   /* Add a black background color to the top navigation */
+	.navbar {
+	  background-color: #CCCCCC;
+	  overflow: hidden;
+	 width: 400px;
+	  margin: auto;
+	}
+
+	/* Style the links inside the navigation bar */
+	.navbar a {
+	  float: none;
+	  color: black;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 20px;
+	 
+	}
+  *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080710;
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+form{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+  /* Importing Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer {
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: auto;
+  width: 100%;
+  background: #10182F;
+  border-radius: 6px;
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+  color: #fff;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 0px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6 ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+}
+
+ .footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #cecccc;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #afb6c7;
+}
+
+.footer-col .icons i:hover  {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footer .footer-row {
+    padding: 0px;
+    gap: 0;
+  }
+
+  .footer-col form {
+    display: flex;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin: 0px 0 0 0;
+  }
+
+ }
